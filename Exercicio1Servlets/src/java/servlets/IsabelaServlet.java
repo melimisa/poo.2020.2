@@ -40,7 +40,7 @@ public class IsabelaServlet extends HttpServlet {
             out.println("<title>Servlet IsabelaServlet</title>");            
             out.println("</head>");
             out.println("<body>");
-            out.println("<h1>Servlet IsabelaServlet at " + request.getContextPath() + "</h1>");
+            out.println("<h1>Isabela Pereira Melim</h1>");
             out.println("</body>");
             out.println("</html>");
         }
