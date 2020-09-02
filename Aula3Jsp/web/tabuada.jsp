@@ -4,25 +4,29 @@
     Author     : isame
 --%>
 
+<%@page import="java.util.Calendar"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Numeros Aleatorios - JSP</title>
+        <title>JSP Page</title>
     </head>
     <body>
-        <h3> <a href="index.jsp">Voltar</a>
         <h1>Java Server Pages</h1>
-        <h2>Numeros aleatórios</h2>
+        <h2>Tabuada</h2>
+        <h3> <a href="index.jsp">Voltar</a>
+            <br>
         
         <!--utilizando scriptlet-->
         <%
-            java.util.Date agora = new java.util.Date();
+            int n = Integer.parseInt(request.getParameter("n"));
+            for(int i =0; i <= 10; i++){
+                int mult = i*n;
+                out.println("<br>" + n + " x "+ i + " = " + mult);
+            }
         %>
         
-        <h3> Agora, no servidor:  <% out.print(agora);%></h3>
-        <!--utilizando expression-->
-        <h3> Agora, no servidor:  <%= agora %></h3>
+        
     </body>
 </html>
