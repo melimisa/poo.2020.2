@@ -15,5 +15,12 @@
         <h1>Java Server Pages</h1>
         <h2>Index</h2>
         <h3> <a href="server-date.jsp"> Data/hora do servidor</a></h3>
+        <h3> <a href="server-date.jsp"> Numeros aleatórios</a></h3>
+        
+        <form action="nome-idade.jsp">
+            Digite seu nome: <input type="text" name="nome"><br><br>
+            Digite seu ano de nascimento: <input type="number" name="anoNasc"><br><br>
+            <input type="submit" value="Enviar">
+        </form>
     </body>
 </html>
