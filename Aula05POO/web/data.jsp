@@ -21,8 +21,8 @@
     <body>
         <h1>Data JavaPage</h1>
         <h2>Data de hoje</h2>
-        <h1><%= hoje.dia %> / <%= hoje.mes %> / <%= hoje.ano %></h1>
+        <h1><%= hoje.getDia() %> / <%= hoje.getMes() %> / <%= hoje.getAno() %></h1>
         <h2>Data de nascimento</h2>
-        <h1><%= nasc.dia  %> / <%= nasc.mes %> / <%= nasc.ano %></h1>
+        <h1><%= nasc.getDia()  %> / <%= nasc.getMes() %> / <%= nasc.getAno() %></h1>
     </body>
 </html>

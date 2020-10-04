@@ -26,10 +26,7 @@ public class Data {
         this.mes = mes;
         this.ano = ano;
     }
-    public static void main(String[] args){
-        
-        
-    }
+   
 
     public int getAno() {
         return ano;
